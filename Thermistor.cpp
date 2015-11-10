@@ -60,7 +60,7 @@ float Thermistor::lastTemp(Temperature temp) {
 float Thermistor::average3Temp(Temperature temp) {
 	float avg = 0;
 	int count = MAX_RECORDED_TEMPS;
-	for(int i=0; i<MAX_RECORDED_TEMPS; i++)
+	for (int i = 0; i < MAX_RECORDED_TEMPS; i++)
 		if (m_lastTempC[i] > -273.0)
 			avg += m_lastTempC[i];
 		else
